@@ -1,0 +1,9 @@
+varnish:
+  image: eeacms/varnish
+  ports:
+  - "80:80"
+  links:
+  - webapp
+
+webapp:
+  image: razvan3895/nodeserver
